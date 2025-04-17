@@ -116,3 +116,15 @@ cd client
 npm install
 npm start
 
+### GET API Explanation
+This GET API is used to retrieve the water intake data of a specific user.
+
+When a GET request is made to the route /api/water/:userId, the server extracts the userId from the URL and uses it to find all the water intake entries stored in the database for that user. The entries are sorted in descending order based on the date, which means the most recent data will appear first.
+
+If no data is found for the given user ID, the API responds with a 404 status and a message saying “No water data found for this user.” This helps in informing the client that no records are available.
+
+If records are found, the API returns them with a 200 status along with the full list of water intake entries for that user in JSON format.
+
+In case any error occurs during the process, like a database connection issue, the API catches that error and responds with a 500 status and a message saying “Error fetching water data.” This ensures proper error handling.
+
+This GET API is helpful for users to view their past water intake history, track their hydration patterns, and analyze their daily habits.

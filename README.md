@@ -61,3 +61,58 @@ Start backend server: npm run dev
 
 Start frontend: npm start
 
+
+
+
+---
+
+## 🗓️ Weekly Development Schedule
+
+### **Week 1: Core Setup & User Features**
+| Day        | Tasks |
+|------------|-------|
+| Monday     | Project cleanup & folder structure setup |
+| Tuesday    | Backend setup (Express, MongoDB, `.env`) |
+| Wednesday  | User model & registration with validation |
+| Thursday   | Login with JWT authentication |
+| Friday     | Add user roles and subscription support |
+| Saturday   | Test user APIs using Postman/frontend |
+| Sunday     | Buffer, bug fixing, or catching up |
+
+### **Week 2: Main Trackers**
+| Day        | Tasks |
+|------------|-------|
+| Monday     | Water Tracker (backend + frontend) |
+| Tuesday    | Nutrition Tracker (backend + frontend) |
+| Wednesday  | Workout Tracker (backend + frontend) |
+| Thursday   | Connect Trackers to Dashboard |
+| Friday     | Progress Tracking View |
+| Saturday   | Styling and error handling |
+| Sunday     | Buffer, polish, and review |
+
+### **Week 3: AI & Payment**
+| Day        | Tasks |
+|------------|-------|
+| Monday     | Integrate Gemini AI prompt route |
+| Tuesday    | Build frontend chat assistant UI |
+| Wednesday  | Set up basic payment route |
+| Thursday   | Add manual transfer and PayPal option |
+| Friday     | Handle access control for premium features |
+| Saturday   | Review security & deploy backend |
+| Sunday     | Final buffer and polish
+
+---
+
+## 📌 How to Run the Project
+
+```bash
+# Backend
+cd server
+npm install
+npm run dev
+
+# Frontend
+cd client
+npm install
+npm start
+

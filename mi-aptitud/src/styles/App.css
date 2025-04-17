@@ -1,0 +1,60 @@
+/* General Styles - Dark Mode */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Login & Signup Page Styles */
+.login-page, .signup-page {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.login-page h2, .signup-page h2 {
+  color: #ff9800;
+}
+
+.login-page input, .signup-page input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 1em;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.login-page button, .signup-page button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff9800;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.login-page button:hover, .signup-page button:hover {
+  background-color: #e68a00;
+}

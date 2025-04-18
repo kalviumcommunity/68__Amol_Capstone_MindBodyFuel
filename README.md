@@ -128,3 +128,7 @@ If records are found, the API returns them with a 200 status along with the full
 In case any error occurs during the process, like a database connection issue, the API catches that error and responds with a 500 status and a message saying “Error fetching water data.” This ensures proper error handling.
 
 This GET API is helpful for users to view their past water intake history, track their hydration patterns, and analyze their daily habits.
+
+
+The POST /login API endpoint allows users to log into the application by submitting their email and password in the request body. This endpoint performs a secure check by first verifying if a user with the provided email exists in the database. If the user is found, the submitted password is compared with the hashed password stored in the database using the bcrypt library. If both the email and password are valid, a JSON Web Token (JWT) is generated using the user's ID and email as payload, signed with a secret key stored in the environment variables (JWT_SECRET). The token is configured to expire in one day and is returned to the client. This token can then be used to authenticate future requests to protected routes, enabling secure and stateless user sessions.
+

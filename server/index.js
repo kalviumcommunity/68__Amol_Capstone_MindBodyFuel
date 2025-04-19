@@ -15,6 +15,7 @@ const workoutRoutes = require("./routes/workoutRoutes");
 const app = express();
 
 // Middleware
+
 app.use(cors());
 app.use(express.json());
 
@@ -28,6 +29,7 @@ app.use("/api/progress", progressRoutes);
 app.use("/api/workout", workoutRoutes);
 
 // Basic test route
+//diployed my backend server 
 app.get("/", (req, res) => {
     res.send("Mind Body Fuel API is running...");
 });

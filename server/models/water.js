@@ -1,3 +1,4 @@
+// water schema
 const mongoose = require("mongoose");
 
 const waterSchema = new mongoose.Schema({

@@ -1,4 +1,5 @@
 // diet schema
+//connected to nutriton
 const mongoose = require("mongoose");
 
 const dietSchema = new mongoose.Schema({

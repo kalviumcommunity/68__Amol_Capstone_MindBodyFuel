@@ -102,20 +102,6 @@ Start frontend: npm start
 | Sunday     | Final buffer and polish
 
 ---
-
-## 📌 How to Run the Project
-
-```bash
-# Backend
-cd server
-npm install
-npm run dev
-
-# Frontend
-cd client
-npm install
-npm start
-
 ### GET API Explanation
 This GET API is used to retrieve the water intake data of a specific user.
 
@@ -136,3 +122,18 @@ The POST /login API endpoint allows users to log into the application by submitt
 
 
 The database schema for this project is designed using MongoDB and follows a document-oriented structure to efficiently store and manage user-specific data. The primary schema is the User Schema, which includes fields like name, email, password (securely hashed), age, gender, and timestamps for creation and updates. In addition to the user data, the project includes other schemas such as Workout Tracker, Nutrition Tracker, and Water Intake Tracker, each of which references the user through a userId field to maintain relationships. These schemas store relevant details like workout types, duration, calories burned, meal information, food items, calorie intake, and daily water consumption. This modular schema design ensures that user activities and health data are logically separated yet easily linked, providing a scalable and organized backend structure for the application.
+
+## 📌 How to Run the Project
+
+```bash
+# Backend
+cd server
+npm install
+npm run dev
+
+# Frontend
+cd client
+npm install
+npm start
+
+

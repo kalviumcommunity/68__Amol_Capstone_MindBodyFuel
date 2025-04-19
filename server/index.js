@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
     res.send("Mind Body Fuel API is running...");
 });
 
-// MongoDB connection
+// MongoDB connection over here
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,

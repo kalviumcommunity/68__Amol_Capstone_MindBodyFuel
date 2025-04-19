@@ -1,3 +1,4 @@
+//for nutrtion
 const mongoose = require("mongoose");
 
 const nutritionSchema = new mongoose.Schema({

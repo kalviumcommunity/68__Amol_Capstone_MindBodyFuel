@@ -8,7 +8,9 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import "./styles/App.css";
 
-// Ensure to include any additional components here (e.g., WaterTracker, NutritionTracker, etc.)
+//  additional components 
+//i installed react
+
 
 function App() {
   return (

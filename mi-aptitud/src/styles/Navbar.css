@@ -1,57 +1,63 @@
 .navbar {
-    background-color: #121212;
-    color: white;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
+  background-color: #1d1d1d; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar .logo {
+  font-size: 2em; /* Larger logo for emphasis */
+  font-weight: bold;
+  flex-shrink: 0;
+  color: #ff5733; /* Sporty orange color */
+  text-transform: uppercase; /* To make it more dynamic */
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li {
+  list-style: none;
+}
+
+.navbar .nav-links a {
+  color: #e0e0e0; /* Light gray color for text */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #ff5733; /* Change color to sporty orange on hover */
+  transform: scale(1.1); /* Slightly increase size for dynamic effect */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
     align-items: center;
-    width: 100%;
+    padding: 10px;
+    background-color: #121212; /* Darker background for mobile */
   }
-  
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
   .navbar .logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    flex-shrink: 0;
-    color: #ff9800;
+    font-size: 2.2em; /* Larger logo on mobile */
   }
-  
-  .navbar .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar .nav-links li {
-    list-style: none;
-  }
-  
-  .navbar .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1em;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar .nav-links a:hover {
-    color: #ff9800;
-  }
-  
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-      padding: 10px;
-    }
-  
-    .nav-links {
-      flex-direction: column;
-      gap: 15px;
-      text-align: center;
-      padding-top: 10px;
-    }
-  }
-  
+}

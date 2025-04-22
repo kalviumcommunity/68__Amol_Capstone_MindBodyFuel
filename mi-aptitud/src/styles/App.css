@@ -3,8 +3,8 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #1d1d1d; /* Dark background to match the theme */
+  color: #e0e0e0; /* Light text color for contrast */
 }
 
 * {
@@ -23,14 +23,14 @@ body {
   max-width: 400px;
   margin: 50px auto;
   padding: 25px;
-  background-color: #1e1e1e;
+  background-color: #1d1d1d; /* Dark background for the form containers */
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Stronger shadow for depth */
   text-align: center;
 }
 
 .login-page h2, .signup-page h2 {
-  color: #ff9800;
+  color: #ff5733; /* Sporty orange color for headings */
 }
 
 .login-page input, .signup-page input {
@@ -40,21 +40,30 @@ body {
   border: 1px solid #444;
   border-radius: 4px;
   font-size: 1em;
-  background-color: #2a2a2a;
+  background-color: #2a2a2a; /* Dark background for input fields */
   color: white;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.login-page input:focus, .signup-page input:focus {
+  background-color: #3a3a3a; /* Slightly lighter background on focus */
+  border-color: #ff5733; /* Orange border for focus */
 }
 
 .login-page button, .signup-page button {
   width: 100%;
   padding: 12px;
-  background-color: #ff9800;
-  color: black;
+  background-color: #ff5733; /* Sporty orange button */
+  color: white;
   border: none;
   border-radius: 4px;
   font-size: 1em;
+  font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .login-page button:hover, .signup-page button:hover {
-  background-color: #e68a00;
+  background-color: #e04e2f; /* Darker orange on hover */
+  transform: scale(1.05); /* Slight scale-up effect on hover */
 }

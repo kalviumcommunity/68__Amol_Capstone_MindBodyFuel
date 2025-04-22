@@ -1,0 +1,121 @@
+/* Signup Page - Dark Sporty Theme */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1d1d1d; /* Dark background for the container */
+    padding: 20px;
+  }
+  
+  .signup-card {
+    background-color: #2a2a2a; /* Dark background for the card */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .signup-card h1 {
+    color: #ff5733; /* Sporty orange for the title */
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
+  
+  .subtitle {
+    color: #b3b3b3; /* Light grey subtitle for contrast */
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #e0e0e0; /* Light text for labels */
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #333333; /* Darker input background */
+    color: white;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #ff5733; /* Orange border on focus */
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+  }
+  
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+    cursor: pointer;
+  }
+  
+  .error {
+    color: #e53e3e; /* Red error message */
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  .api-error {
+    text-align: center;
+    margin: 15px 0;
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff5733; /* Sporty orange for the button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+    margin-top: 10px;
+  }
+  
+  .signup-button:hover {
+    background-color: #e04e2f; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
+  .login-link {
+    margin-top: 20px;
+    color: #b3b3b3; /* Light grey for the login link */
+    font-size: 14px;
+  }
+  
+  .login-link span {
+    color: #ff5733; /* Sporty orange for the link */
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .login-link span:hover {
+    text-decoration: underline;
+  }
+  

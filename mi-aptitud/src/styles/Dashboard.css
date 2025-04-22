@@ -3,16 +3,35 @@
   margin: 50px auto;
   padding: 20px;
   text-align: center;
-  background-color: #121212;
+  background-color: #1d1d1d; /* Dark background for the dashboard */
   border-radius: 8px;
+  color: #e0e0e0; /* Light text color for contrast */
 }
 
 h2 {
-  color: #ff9800;
+  color: #ff5733; /* Sporty orange color for headings */
 }
 
 .dashboard div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Optional: Adding some styling for elements inside the dashboard */
+.dashboard input, .dashboard button {
+  padding: 0.75rem;
+  margin: 10px;
+  width: 80%;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #e0e0e0;
+  background-color: #2a2a2a; /* Darker background for input fields and buttons */
+  border: 1px solid #444; /* Subtle border for inputs and buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dashboard input:focus, .dashboard button:hover {
+  background-color: #ff5733; /* Highlight with sporty orange on focus/hover */
+  transform: scale(1.05); /* Slight scale-up effect on hover */
 }

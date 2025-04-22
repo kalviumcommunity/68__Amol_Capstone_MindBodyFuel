@@ -1,0 +1,185 @@
+/* Login Page - Dark Sporty Theme */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; /* Dark background for the container */
+    padding: 20px;
+  }
+  
+  /* Card */
+  .login-card {
+    background: #1e1e1e; /* Dark card background */
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Strong shadow for depth */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Headings */
+  .login-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: #ff5733; /* Sporty orange title */
+  }
+  
+  .login-subtitle {
+    font-size: 0.875rem;
+    color: #b3b3b3; /* Light grey subtitle */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Tabs */
+  .tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tab-buttons button {
+    border: none;
+    background: none;
+    padding-bottom: 0.25rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .active-tab {
+    border-color: #ff5733; /* Highlight active tab with sporty orange */
+    color: #ff5733;
+  }
+  
+  .inactive-tab {
+    color: #6b7280; /* Grey color for inactive tabs */
+  }
+  
+  /* Form */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: left;
+  }
+  
+  .login-form label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #e0e0e0; /* Light grey for labels */
+  }
+  
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #444; /* Darker border for inputs */
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #333333; /* Dark input background */
+    color: white;
+  }
+  
+  .login-form input[type="email"]:focus,
+  .login-form input[type="password"]:focus {
+    outline: none;
+    border-color: #ff5733; /* Orange border on focus */
+  }
+  
+  /* Options */
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+  }
+  
+  .form-options input {
+    margin-right: 0.35rem;
+  }
+  
+  .forgot-link {
+    color: #ff5733; /* Sporty orange for forgot link */
+    text-decoration: none;
+  }
+  
+  .forgot-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button */
+  .signin-button {
+    background-color: #ff5733; /* Sporty orange for the button */
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .signin-button:hover {
+    background-color: #e04e2f; /* Darker orange on hover */
+  }
+  
+  /* Divider */
+  .divider {
+    text-align: center;
+    color: #b3b3b3; /* Light grey text for divider */
+    font-size: 0.85rem;
+    margin: 1.5rem 0 0.75rem;
+    position: relative;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #444; /* Dark border color for divider */
+    width: 40%;
+    top: 50%;
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+  
+  /* Social Buttons */
+  .social-login {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .google-btn,
+  .facebook-btn {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #444; /* Dark border for buttons */
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #333333; /* Dark background for buttons */
+    color: white;
+  }
+  
+  .google-btn:hover {
+    background-color: #444; /* Lighter shade on hover */
+  }
+  
+  .facebook-btn:hover {
+    background-color: #444; /* Lighter shade on hover */
+  }
+  

@@ -1,78 +1,29 @@
-/* src/pages/Dashboard.css */
-.dashboard-container {
-    background-color: #f4f4f9;
-    color: #333;
-    padding: 40px;
-    min-height: 100vh;
-}
-
-.dashboard-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.dashboard-header h1 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.dashboard-header p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-.overview-section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 40px;
-}
-
-.card {
-    background-color: #fff;
+/* Tracker Box Styles (Water, Nutrition, Workout, etc.) */
+.tracker-box {
+    background-color: #1e293b; /* Slightly lighter than dashboard background */
+    color: #e0e0e0;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #2c3e50; /* Optional: adds subtle border for separation */
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
     text-align: left;
-}
-
-.card h3 {
-    font-size: 1.5rem;
-    color: #ff7f50;
+    transition: transform 0.3s ease;
+  }
+  
+  .tracker-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tracker-box h4 {
+    color: #ff7f50; /* Highlight heading */
     margin-bottom: 10px;
-}
-
-.progress-section {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.progress-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
-
-/* Loading Skeleton */
-.loading-skeleton {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #333;
-}
-
-/* Error Message */
-.error-message {
-    color: red;
-    text-align: center;
-}
+    font-size: 1.2rem;
+  }
+  
+  .tracker-box p {
+    color: #b3b3b3;
+    font-size: 0.95rem;
+  }
+  

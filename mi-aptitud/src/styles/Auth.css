@@ -1,61 +1,70 @@
 .auth-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 25px;
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    text-align: center;
-  }
-  
-  h2 {
-    color: #ff9800;
-  }
-  
-  label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
-    color: #e0e0e0;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #444;
-    border-radius: 4px;
-    background-color: #2a2a2a;
-    color: white;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #ff9800;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #e68a00;
-  }
-  
-  .error-message {
-    color: red;
-    margin-bottom: 10px;
-  }
-  
-  .link {
-    color: #ff9800;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .link:hover {
-    text-decoration: underline;
-  }
-  
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: #1d1d1d; /* Dark background to match the theme */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Stronger shadow for a modern look */
+  text-align: center;
+}
+
+h2 {
+  color: #ff5733; /* Sporty orange color for headings */
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #e0e0e0; /* Light color for labels */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #2a2a2a; /* Dark background for input fields */
+  color: white;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus {
+  background-color: #3a3a3a; /* Slightly lighter background on focus */
+  border-color: #ff5733; /* Sporty orange border on focus */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff5733; /* Bright orange button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #e04e2f; /* Slightly darker orange on hover */
+  transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.link {
+  color: #ff5733; /* Sporty orange color for links */
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #e04e2f; /* Slightly darker orange on hover */
+}

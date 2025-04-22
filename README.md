@@ -122,7 +122,11 @@ The POST /login API endpoint allows users to log into the application by submitt
 
 
 The database schema for this project is designed using MongoDB and follows a document-oriented structure to efficiently store and manage user-specific data. The primary schema is the User Schema, which includes fields like name, email, password (securely hashed), age, gender, and timestamps for creation and updates. In addition to the user data, the project includes other schemas such as Workout Tracker, Nutrition Tracker, and Water Intake Tracker, each of which references the user through a userId field to maintain relationships. These schemas store relevant details like workout types, duration, calories burned, meal information, food items, calorie intake, and daily water consumption. This modular schema design ensures that user activities and health data are logically separated yet easily linked, providing a scalable and organized backend structure for the application.
+  
 
+##Using jwt in application
+
+  "After a user logs in successfully, I generate a JWT access token using the jwt.sign() function. The token includes the user's ID and email as the payload, which helps identify the user in future requests without storing sensitive information like the password. I sign the token using a secret key stored in a .env file, ensuring it's secure and not exposed in my codebase. The token is set to expire in one day for security purposes, so users will need to log in again after that period. Storing the secret key in an environment file is a good practice, as it keeps sensitive data out of version control and protects the application from potential security risks."
 ## 📌 How to Run the Project
 
 ```bash

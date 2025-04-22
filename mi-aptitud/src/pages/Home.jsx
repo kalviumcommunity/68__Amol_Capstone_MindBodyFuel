@@ -1,59 +1,112 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import './Home.css';
 
 const Home = () => {
-    return (
-        <div style={{ backgroundColor: '#1e1e1e', color: '#fff', padding: '40px', minHeight: '100vh' }}>
-            <header style={{ textAlign: 'center', marginBottom: '40px' }}>
-                <h1 style={{ fontSize: '3rem', color: '#ff7f50' }}>Welcome to Mind Body Fuel</h1>
-                <p style={{ fontSize: '1.2rem', color: '#ddd' }}>Achieve your fitness goals with the best training and nutrition programs.</p>
-            </header>
+  return (
+    <div className="home-container">
+      {/* Hero Section */}
+      <section className="hero-section">
+        <h1>Everything You Need to Succeed</h1>
+        <p className="hero-subtitle">
+          Comprehensive tools and guidelines to help you achieve your fitness goals
+        </p>
+      </section>
 
-            <section style={{ textAlign: 'center', marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '2rem', marginBottom: '20px' }}>Our Services</h2>
-                <div style={{ display: 'flex', justifyContent: 'center', gap: '30px' }}>
-                    <div style={{ backgroundColor: '#333', padding: '20px', borderRadius: '8px', width: '250px' }}>
-                        <h3>Personal Training</h3>
-                        <p>Get one-on-one training sessions with our expert trainers to reach your fitness goals.</p>
-                    </div>
-                    <div style={{ backgroundColor: '#333', padding: '20px', borderRadius: '8px', width: '250px' }}>
-                        <h3>Nutrition Plans</h3>
-                        <p>Customized meal plans to fuel your body and help you achieve optimal health.</p>
-                    </div>
-                    <div style={{ backgroundColor: '#333', padding: '20px', borderRadius: '8px', width: '250px' }}>
-                        <h3>Fitness Programs</h3>
-                        <p>Access a variety of fitness programs suited for all levels of experience.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section style={{ textAlign: 'center', marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '2rem', marginBottom: '20px' }}>Join Us Today</h2>
-                <p style={{ fontSize: '1.2rem', color: '#ddd', marginBottom: '20px' }}>
-                    Start your fitness journey with us today and become a part of the Mind Body Fuel community.
-                </p>
-                <Link
-                    to="/signup"
-                    style={{
-                        padding: '12px 25px',
-                        backgroundColor: '#ff7f50',
-                        color: 'white',
-                        fontSize: '1rem',
-                        textDecoration: 'none',
-                        borderRadius: '5px',
-                    }}
-                >
-                    Sign Up Now
-                </Link>
-            </section>
-
-            <footer style={{ textAlign: 'center', padding: '20px', backgroundColor: '#2c2c2c' }}>
-                <p style={{ color: '#fff', fontSize: '1rem' }}>
-                    &copy; 2025 Mind Body Fuel. All rights reserved.
-                </p>
-            </footer>
+      {/* Features Section */}
+      <section className="features-section">
+        <div className="feature-card">
+          <h3>Smart Workouts</h3>
+          <p>Personalized training plans that adapt to your progress and schedule</p>
         </div>
-    );
+        <div className="feature-card">
+          <h3>Nutrition Tracking</h3>
+          <p>Custom meal plans and macro tracking to fuel your transformation</p>
+        </div>
+        <div className="feature-card">
+          <h3>Progress Tracking</h3>
+          <p>Visual progress tracking and analytics to keep you motivated</p>
+        </div>
+      </section>
+
+      {/* Tomorrow's Plan Section */}
+      <section className="plan-section">
+        <h2>Tomorrow's Plan</h2>
+        <div className="plan-cards">
+          <div className="plan-card">
+            <h3>Cheat Day</h3>
+            <p>48 minutes + 4 exercises</p>
+          </div>
+          <div className="plan-card">
+            <h3>Nutrition Target</h3>
+            <p>50g protein + 2400 calories</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="testimonials-section">
+        <h2>Real Results, Real Stories</h2>
+        <div className="testimonials">
+          <div className="testimonial">
+            <h4>Janwu Wilson</h4>
+            <p className="result">Lost 50lbs in 6 months</p>
+            <p className="quote">
+              "The personalized workout plans and nutrition tracking made all the difference. I've never felt better!"
+            </p>
+          </div>
+          <div className="testimonial">
+            <h4>Sarah Chen</h4>
+            <p className="result">Gained 15lbs muscle mass</p>
+            <p className="quote">
+              "The progress tracking features keep me motivated, and the community support is amazing!"
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="cta-section">
+        <h2>Ready to Transform?</h2>
+        <p>Join thousands of others who have already started their fitness journey with us.</p>
+        <button className="cta-button">Start Free Trial</button>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-section">
+            <h4>Features</h4>
+            <ul>
+              <li>Workouts</li>
+              <li>Nutrition</li>
+              <li>Progress Tracking</li>
+              <li>Community</li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h4>Legal</h4>
+            <ul>
+              <li>Privacy Policy</li>
+              <li>Terms of Service</li>
+              <li>Cookie Policy</li>
+            </ul>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>© 2025 Mind Body & Fuel. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  );
 };
 
 export default Home;
